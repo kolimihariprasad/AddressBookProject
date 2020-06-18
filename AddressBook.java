@@ -44,7 +44,14 @@ public class AddressBook extends PersonInfo{
 		}
 		return count;
 	}
-
+	public void Search(){
+		System.out.println("Enter First name of person to git details: ");
+		String name = input.next();
+		int count=findPerson(name);
+		System.out.println("---------------------------------");
+		personList.get(count).display();
+		System.out.println("---------------------------------\n");
+	}
 	public void editAddress(){
 		System.out.println("Enter First name of person to Edit: ");
 		String name = input.next();
